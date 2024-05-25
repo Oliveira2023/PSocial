@@ -1,0 +1,39 @@
+
+main {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+#main-inside {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#gridPinicial {
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.especialidade {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: justify;
+    background-color: aquamarine;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px;
+}
+footer {
+    text-align: center;
+}
+#redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.redes img{
+    width: 30px;
+    height: 30px;
+}
