@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5
+}
 
 main {
     padding: 0 20px;
@@ -23,17 +29,4 @@ main {
     background-color: aquamarine;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px;
-}
-footer {
-    text-align: center;
-}
-#redes-sociais {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-.redes img{
-    width: 30px;
-    height: 30px;
 }

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5
+}
+header {
+    padding: 0 20px;
+    /* margin-top: 10px; */
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+        flex: 1;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            list-style: none;
+            background-color: beige;
+            
+        }
+    }
+    aside {
+        background-color: aquamarine;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px 1px;
+    }
+}
