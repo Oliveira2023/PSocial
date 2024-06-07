@@ -1,5 +1,5 @@
 <header>
-        <h1>Poliana Pavan</h1>
+        <h1><a href="/">Poliana Pavan</a></h1>
         <nav>
             <ul>
                 <li><a href="/">Início</a></li>

@@ -2,12 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5
+    background-color: #EEE6E3
 }
 
 main {
-    padding: 0 20px;
-    margin-top: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+#banner-principal {
+    width: 100%;
+    box-sizing: border-box;
+    > img {
+        width: 100%;
+    }
 }
 #main-inside {
     
@@ -23,10 +30,10 @@ main {
     padding: 10px;
 }
 .especialidade {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 5px;
     text-align: justify;
-    background-color: aquamarine;
+    background-color: #EEE6E3;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 4px 1px;
 }
