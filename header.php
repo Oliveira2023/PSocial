@@ -3,7 +3,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="clinica.html">A Clínica</a></li>
+                <li><a href="projeto.html">O projeto</a></li>
                 <li><a href="valores.html">Valores</a></li>
                 <!-- <li><a href="contato.html">Contato</a></li> -->
             </ul>
