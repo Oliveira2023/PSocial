@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color1: #664639;
+    --color2: #D9B08C;
+    --color3: #EEE6E3;
+    --bgcolor: #fff5f0;
+    --color3: #558483;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgcolor);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1,h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.line16 {
+    line-height: 1.6;
+    /* box-shadow: 1px 1px 4px 1px; */
+}

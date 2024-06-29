@@ -2,17 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #fff5f0;
     box-sizing: border-box;
 }
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 10px;
     align-items: center;
     /* width: 100vw; */
     height: 20vh;
     padding: 0 10%;
-    color: #664639;
+    /* color: #664639; */
+    color: #c98d71;
     background-color: white;
     > h1 {
         > a {
@@ -22,8 +24,10 @@ header {
     }
     > div {
         width: 70px;
-        > img {
+        border-radius: 50%;
+        >a img {
             width: 100%;
+            border-radius: 50%;
         }
     }
 }
