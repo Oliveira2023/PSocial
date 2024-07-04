@@ -24,7 +24,6 @@ main {
     }
 }
 #gridPrincipal {
-    
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
@@ -39,22 +38,23 @@ main {
     box-shadow: 1px 1px 4px 1px;
 }
 @media screen and (max-width: 600px) {
+
     main {
         width: 90%;
         margin: auto;
         padding: 0;
-        background-color: yellow;
-        
     }
     #gridPrincipal {
         display: flex;
         flex-direction: column;
-        /* grid-template-columns: auto; */
-        background-color: aqua;
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .especialidade {
-            border: 1px solid rgb(180, 38, 38);
-            width: 100%;
+            border: 1px solid black;
+            width: 95%;
+            margin: auto;
     }
     
 }

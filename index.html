@@ -28,6 +28,7 @@
             </ul>
         </nav>
         <aside><a href="contato.html">Agende sua sessão</a></aside>
+        <div id="menu" onclick="menu()"><img src="./assets/images/menu.svg" alt="" srcset=""></div>
     </header>
     <main>
         <div>
@@ -51,8 +52,8 @@
             </div>
         </div>
         <div>
-            <h2>Especialidades</h2>
-            <p>Conhecendo as especialidades</p>
+            <!-- <h2>Pensamentos</h2> -->
+            <!-- <p>Conhecendo as especialidades</p> -->
             <div id="gridPrincipal">
                 <div class="especialidade">
                     <div>icone/imagem</div>
@@ -123,5 +124,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        let nav = document.querySelector('nav');
+        let menu = document.querySelector('#menu');
+        let asside = document.querySelector('aside');
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            asside.classList.toggle('aside');
+        })
+    </script>
 </body>
 </html>
