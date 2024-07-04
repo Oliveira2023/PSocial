@@ -5,13 +5,15 @@
     --color2: #D9B08C;
     --color3: #EEE6E3;
     --bgcolor: #fff5f0;
-    --color3: #558483;
+    --color4: #558483;
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: var(--bgcolor);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100vw;
 }
 h1,h2 {
     font-family: 'PT Serif', serif;
@@ -21,4 +23,9 @@ h1,h2 {
 .line16 {
     line-height: 1.6;
     /* box-shadow: 1px 1px 4px 1px; */
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-color: green;
+    }
 }

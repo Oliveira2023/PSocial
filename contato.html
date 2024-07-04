@@ -27,17 +27,17 @@
     <main>
         <div id="main-img">
             <h1>Entre em contato</h1>
-            <div>
+            <div id="main-img-contacts">
                 <div>
-                    <div>icone</div>
+                    <div class="icone-rede"><img src="./assets/images/telefone-tipico-antigo.png" alt="" srcset=""></div>
                     <p>(19) 99453-6199</p>
                 </div>
                 <div>
-                    <div>icone</div>
+                    <div class="icone-rede"><img src="./assets/images/o-email.png" alt="" srcset=""></div>
                     <p>polianafpavan@gmail.com</p>
                 </div>
                 <div>
-                    <div class="icone-rede"><img src="./assets/images/instagram-40.png" alt="" srcset=""></div>
+                    <div class="icone-rede"><img src="./assets/images/instagram.png" alt="" srcset=""></div>
                     <p>@polianapavan.psi</p>
                 </div>
             </div>
@@ -49,16 +49,20 @@
             <p>Qual valor da sessão?</p>
             
         </div>
-        <form action="">
-            <label for="nome" aria-hidden="true" aria-label="Nome"></label>
-            <input type="text" name="nome" id="nome" placeholder="Nome">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="906dd3ba-75e2-47ad-9a0c-420ff196b79f">
+            <input type="hidden" name="subject" value="ClickMind">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+
+            <label for="name" aria-hidden="true" aria-label="Nome"></label>
+            <input type="text" name="name" id="nome" placeholder="Nome">
             <label for="email"></label>
             <div id="email">
                 <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="text" name="telefone" id="" placeholder="Telefone">
+                <input type="text" name="phone" id="" placeholder="Telefone">
             </div>
-            <label for="consulta"></label>
-            <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            
+            <textarea name="message" id="consulta" cols="30" rows="10" placeholder="Mensagem"></textarea>
             <input type="submit" value="Enviar">
         </form>
     </main>

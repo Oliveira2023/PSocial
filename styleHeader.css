@@ -11,7 +11,6 @@ header {
     font-family: Roboto;
     padding: 0 60px;
     height: fit-content;
-    /* color: #664639; */
     color: #d08d53;
     margin: auto;
     background-color: white;
@@ -81,4 +80,30 @@ header {
             font-weight: bold;
         }
     }
+}
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        margin: auto;
+        > nav {
+            display: none;
+            > ul {
+                display: flex;
+                flex-direction: column;
+                > li {
+                    
+                    /* flex-direction: column; */
+                }
+            }
+        }
+        
+    }
+    #logo {
+        margin-left: 0px;
+    }
+    aside {
+        display: none;
+    }
+    
+    
 }

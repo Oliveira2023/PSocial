@@ -22,7 +22,7 @@ main {
         display: flex;
         gap: 10px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -31,24 +31,33 @@ main {
         /* background-color: aqua; */
 
         > div {
-            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid black; */
             width: 20%;
             height: 100px;
             text-align: center;
             padding: 5px;
-            background-color: rgb(228, 236, 233);
+            background-color: var(--color3);
             border-radius: 5px;
             box-shadow: 1px 1px 5px 1px;
+            font-size: small;
+            .icone-rede {
+                width: 30px;
+                background-color: #558483;
+                padding: 10px;
+                border-radius: 50%;
+                > img {
+                    width: 100%;
+                }
+                
+            }
         }
     }
     
 }
-.icone-rede {
-    width: 30px;
-    > img {
-        width: 100%;
-    }
-}
+
 form {
     display: flex;
     flex-direction: column;
