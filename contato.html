@@ -23,20 +23,27 @@
             </ul>
         </nav>
         <aside><a href="contato.html">Agende sua sessão</a></aside>
+        <div id="menu"><img src="./assets/images/menu.svg" alt="" srcset=""></div>
+        <div id="overlay" class="overlay"></div>
     </header>
     <main>
         <div id="main-img">
-            <h1>Entre em contato</h1>
+            
+            <div>
+                <h1>Entre em contato</h1>
+                <img src="./assets/images/pexels-martinpechy-1866149.jpg" alt="imagem de sofá" srcset="">
+            </div>
+
             <div id="main-img-contacts">
-                <div>
+                <div class="contact">
                     <div class="icone-rede"><img src="./assets/images/telefone-tipico-antigo.png" alt="" srcset=""></div>
                     <p>(19) 99453-6199</p>
                 </div>
-                <div>
+                <div class="contact">
                     <div class="icone-rede"><img src="./assets/images/o-email.png" alt="" srcset=""></div>
                     <p>polianafpavan@gmail.com</p>
                 </div>
-                <div>
+                <div class="contact">
                     <div class="icone-rede"><img src="./assets/images/instagram.png" alt="" srcset=""></div>
                     <p>@polianapavan.psi</p>
                 </div>
@@ -46,7 +53,8 @@
         <h2>Agende sua consulta</h2>
         <p>Para agendar uma consulta, preencha o formulário abaixo</p>
         <div>
-            <p>Qual valor da sessão?</p>
+            <p id="qualValor">Qual valor da sessão?</p>
+            <p id="valor">Fixo<br>R$70,00<br>/sessão</p>
             
         </div>
         <form action="https://api.staticforms.xyz/submit" method="post">
@@ -81,5 +89,19 @@
             <div class="redes"><img src="./assets/images/linkedin.png" alt=""></div>
         </div>
     </footer>
+    <script src="index.js"></script>
+    <script>
+        let valor = document.querySelector('#valor');
+        let qualValor = document.querySelector('#qualValor');
+        valor.style.display = 'none';
+        qualValor.addEventListener('click', () => {
+            if (valor.style.display === 'none') {
+                valor.style.display = 'flex'; // Mostra o elemento
+            } else {
+                valor.style.display = 'none'; // Oculta o elemento
+            }
+            console.log("click para mostrar o valor");
+        })
+    </script>
 </body>
 </html>

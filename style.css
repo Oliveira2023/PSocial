@@ -3,6 +3,9 @@ main {
     width: 80%;
     margin: 20px auto;
 }
+h2 {
+    margin: 0;
+}
 
 #banner-principal {
     width: 100%;
@@ -29,6 +32,13 @@ main {
     grid-gap: 10px;
     padding: 10px;
 }
+.icons {
+    width: 50%;
+    margin: auto;
+    > img {
+        width: 100%;
+    }
+}
 .especialidade {
     /* border: 1px solid black; */
     padding: 5px;
@@ -52,9 +62,9 @@ main {
         margin-bottom: 5px;
     }
     .especialidade {
-            border: 1px solid black;
-            width: 95%;
-            margin: auto;
+        border: 1px solid black;
+        width: 95%;
+        margin: auto;
     }
     
 }

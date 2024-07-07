@@ -22,3 +22,14 @@ main {
     width: 80%;
     margin: 20px auto;
 }
+@media screen and (max-width: 600px) {
+    #banner-clinica {
+        flex-direction: column;
+        width: 90%;
+
+        height: auto;
+        > img {
+            object-fit: contain;
+        }
+    }
+}
