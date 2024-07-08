@@ -27,6 +27,14 @@ main {
         }
     }
 }
+#saiba-mais {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #664639;
+    &:hover {
+        color: #558483;
+    }
+}
 #gridPrincipal {
     display: grid;
     grid-template-columns: auto auto auto;

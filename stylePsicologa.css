@@ -7,8 +7,8 @@ body {
 }
 header {
     display: flex;
-    justify-content: start;
-    gap: 10px;
+    justify-content: space-evenly;
+    /* gap: 10px; */
     align-items: center;
     /* width: 100vw; */
     height: 20vh;
@@ -32,29 +32,23 @@ header {
     }
 }
 #psicologa {
-    /* box-sizing: border-box; */
-
-    position: relative;
+    background-image: url(./assets/images/poliface.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     width: 80%;
     margin: 5px auto;
     box-sizing: border-box;
-    
     margin-bottom: 20px;
     > img {
         width: 100%;
-        
         border-radius: 10px;
         box-shadow: 1px 1px 8px 8px rgb(173, 166, 166);
     }
     #insidePhoto {
-        position: absolute;
         border-radius: 10px;
-        top: 0;
-        left: 0;
-        width: 97.6%;
-        height: 96%;
-        overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.5);
+        /* overflow-y: scroll; */
+        background-color: rgba(0, 0, 0, 0.562);
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
@@ -63,10 +57,21 @@ header {
         padding: 10px;
         > h2 {
             width: 50%;
-        }
-        > p {
-            width: 60%;
-            /* margin: 5px; */
+            margin: auto;
         }
     }
+}
+.poli-history {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+@media screen and (max-width: 600px) {
+    #psicologa {
+        width: 90%;
+    }
+    .poli-history {
+        width: 90%;
+    }
+    
 }

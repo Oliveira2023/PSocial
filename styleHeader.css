@@ -66,9 +66,18 @@ header {
                 a{
                     text-decoration: none;
                     color: #000;
+                    
+                }
+                > a:hover {
+                    color: #c98d71;
+                    transition: 0.3s;
+                    
                 }
             }
         }
+    }
+    .li-header:hover {
+        transform: scale(1.1);
     }
     aside {
         background-color: #c98d71;
@@ -163,8 +172,11 @@ header {
                 border-bottom: 1px solid white;
                 > a {
                     color: white;
+
                 }
+
             }
+
         }
     }
     
