@@ -67,5 +67,8 @@ main {
         width: 95%;
         margin: auto;
     }
+    .icons {
+        width: 30px;
+    }
     
 }
