@@ -19,7 +19,7 @@ overlay.addEventListener('click', function(event) {
     
 });
 dropdown.forEach(element => {
-    console.log(element)
+    
     element.addEventListener('click', () => {
         element.lastElementChild.classList.toggle('active-text');
     })
