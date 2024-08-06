@@ -2,6 +2,7 @@ let nav = document.querySelector('nav');
 let menu = document.querySelector('#menu');
 let asside = document.querySelector('aside');
 let overlay = document.querySelector('#overlay');
+let dropdown = document.querySelectorAll('.duvida');
 
 
 menu.addEventListener('click', () => {
@@ -16,4 +17,10 @@ overlay.addEventListener('click', function(event) {
         document.getElementById('overlay').style.display = 'none';
     }
     
+});
+dropdown.forEach(element => {
+    console.log(element)
+    element.addEventListener('click', () => {
+        element.lastElementChild.classList.toggle('active-text');
+    })
 });

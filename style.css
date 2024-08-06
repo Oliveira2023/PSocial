@@ -56,6 +56,41 @@ main {
     border-radius: 5px;
     box-shadow: 1px 1px 4px 1px;
 }
+#duvidas {
+    width: 80%;
+    margin: auto;
+    > h2 {
+        text-align: center;
+    }
+}
+.duvida {
+    background-color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(194, 190, 190, 0.769);
+}
+.duvida-text {
+    display: none;
+}
+.active-text {
+    display: block;
+}
+.arrow-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    > h3 {
+        margin: 0;
+    }
+    > div {
+        width: 30px;
+        > img {
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     main {
@@ -77,6 +112,9 @@ main {
     }
     .icons {
         width: 30px;
+    }
+    .duvida-text {
+        text-align: justify;
     }
     
 }
